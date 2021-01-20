@@ -1,0 +1,7 @@
+Assumptions in solution:
+- With a given node name N, Mn must be the set of all nodes that are connected to N, as each node "contains" a list of connections which are names of other nodes
+- Since there are instances of one node connecting to a second node but not that second node connecting back to the first, it is assumed that the data is representing a directed graph
+- The distance D is a restriction on a search that without which could continue indefinately as there are loops within the direted graph. A search will require to cut off when traversing a specific branch of the produced search tree so a depth first search instead of a breadth first search was utilised.
+- Md is a subset of all nodes, not a subset of Mn nodes (the spec says "when travelling along the connections between THE nodes"). Md is the result of starting from each Md nodes, searching all possibly connected nodes at any degree but with the restriction of the given max distance parameter.
+- actual X,Y coordinates do not need to be displayed
+- The shortest distance associated with an Md node is the shortest of the shortest distances to all Mn nodes, using any connections between all nodes in the graph. It is not the shortest distances of an Md node to all Mn nodes, for all Md nodes
