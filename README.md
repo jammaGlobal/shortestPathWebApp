@@ -1,3 +1,7 @@
+How to get node_modules dependencies folder to run application:
+- run command "npm init"
+- then for each js library to install, run "npm install ______" where in the blank space you will type a library name. The libraries to download are (express, express-fileupload, cors, body-parser, dns, lodash, repl)
+
 The task is to create an application with a user interface consisting of two parts:  
 Input: a form containing the following elements:  
 File: a file selection element accepting a single JSON file.  
